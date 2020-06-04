@@ -1,0 +1,47 @@
+
+Option Explicit
+
+Function Uit(date1 As Date) As Double
+	If Year(date1) = 2020 Then
+		uit = 4300
+	ElseIf Year(date1) = 2019 Then
+		uit = 4200
+	ElseIf Year(date1) = 2018 Then
+		uit = 4150
+	ElseIf Year(date1) = 2017 Then
+		uit = 4050
+	ElseIf Year(date1) = 2016 Then
+		uit = 3950
+	ElseIf Year(date1) = 2015 Then
+		uit = 3850
+	ElseIf Year(date1) = 2014 Then
+		uit = 3800
+	ElseIf Year(date1) = 2013 Then
+		uit = 3700
+	ElseIf Year(date1) = 2012 Then
+		uit = 3650
+	ElseIf Year(date1) < 2012 And Year(date1) > 2009 Then
+		uit = 3600
+	ElseIf Year(date1) = 2009 Then
+		uit = 3550
+	ElseIf Year(date1) = 2008Then
+		uit = 3500
+	ElseIf Year(date1) = 2007 Then
+		uit = 3450
+	ElseIf Year(date1) = 2006 Then
+		uit = 3400
+	ElseIf Year(date1) = 2005Then
+		uit = 3300
+	ElseIf Year(date1) = 2004 Then
+		uit = 3200
+	ElseIf Year(date1) < 2004 And Year(date1) > 2001 Then
+		uit = 3100
+	ElseIf Year(date1) = 2001Then
+		uit = 3000
+	ElseIf Year(date1) = 2000 Then
+		uit = 2900
+	Else		
+		uit = 2800
+	End If
+End Function
+
